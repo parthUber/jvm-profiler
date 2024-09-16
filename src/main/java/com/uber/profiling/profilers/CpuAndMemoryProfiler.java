@@ -215,7 +215,10 @@ public class CpuAndMemoryProfiler extends ProfilerBase implements Profiler {
             map.put("vmHWM", procStatusVmHWM);
         }
 
+        logger.info("Reporting CPU and memory metrics");
+
         if (reporter != null) {
+            logger.info("Reporting CPU and memory metrics not null ");
             reporter.report(PROFILER_NAME, map);
         }
     }

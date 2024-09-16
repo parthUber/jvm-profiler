@@ -59,6 +59,7 @@ public class AgentImpl {
         }
         
         Reporter reporter = arguments.getReporter();
+        logger.info("reporter is null: " + (reporter == null));
 
         String processUuid = UUID.randomUUID().toString();
 
